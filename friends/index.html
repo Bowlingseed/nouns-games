@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Puzzle Games</title>
+    <title>Nounish Friends | Nouns Games</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
@@ -21,31 +21,11 @@
                 <div id="unity-progress-bar-full"></div>
             </div>
         </div>
-        <div id="unity-warning"></div>
     </div>
     <script>var container = document.querySelector("#unity-container");
         var canvas = document.querySelector("#unity-canvas");
         var loadingBar = document.querySelector("#unity-loading-bar");
         var progressBarFull = document.querySelector("#unity-progress-bar-full");
-        var warningBanner = document.querySelector("#unity-warning");
-
-        function unityShowBanner(msg, type) {
-            function updateBannerVisibility() {
-                warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
-            }
-            var div = document.createElement('div');
-            div.innerHTML = msg;
-            warningBanner.appendChild(div);
-            if (type == 'error') div.style = 'background: red; padding: 10px;';
-            else {
-                if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
-                setTimeout(function () {
-                    warningBanner.removeChild(div);
-                    updateBannerVisibility();
-                }, 5000);
-            }
-            updateBannerVisibility();
-        }
         var buildUrl = "Build";
         var loaderUrl = buildUrl + "/friends.loader.js";
         var config = {
@@ -56,7 +36,6 @@
             companyName: "Nouns Games, LLC",
             productName: "Puzzle Games",
             productVersion: "1.6.1",
-            showBanner: unityShowBanner,
         };
         if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
             var meta = document.createElement('meta');
@@ -65,7 +44,6 @@
             document.getElementsByTagName('head')[0].appendChild(meta);
             container.className = "unity-mobile";
             canvas.className = "unity-mobile";
-            unityShowBanner('WebGL builds are not supported on mobile devices.');
         } else {
             canvas.style.width = "512px";
             canvas.style.height = "888px";
