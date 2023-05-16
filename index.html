@@ -2,9 +2,11 @@
 <html>
 <head>
     <title>Nouns Games, WTF?</title>
+    <meta property="og:image" content="images/nouns-games-logo.png">
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -13,25 +15,58 @@
             background-color: black;
         }
 
-        img {
-            width: 320px;
-            height: 320px;
-        }
-
-        .share-buttons {
-            margin-top: 20px;
+        .image-container {
             display: flex;
             justify-content: center;
+            gap: 20px;
+            max-width: 600px;
         }
 
-        .share-button {
-            margin: 0 5px;
+            .image-container a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-decoration: none;
+                color: white;
+                font-family: Verdana, sans-serif;
+            }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .top-image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .top-image {
+            width: 320px;
+            height: 320px;
         }
     </style>
 </head>
 <body>
-    <a href="foodnouns/index.html">
-        <img src="images/nouns-games-logo.png" alt="Nouns Games Logo">
-    </a>
+    <div class="top-image-container">
+        <img src="images/nouns-games-logo.png" alt="Nouns Games Logo" class="top-image">
+    </div>
+
+    <div class="image-container">
+        <a href="foodnouns/index.html">
+            <img src="images/foodnouns-logo.png" alt="Food Nouns Logo">
+            <span>FOODNOUNs</span>
+        </a>
+        <a href="friends/index.html">
+            <img src="images/nounish-friends-logo.png" alt="Nounish Friends Logo">
+            <span>Nounish Friends</span>
+        </a>
+        <a href="https://nounsbowling.wtf">
+            <img src="images/nouns-bowling-logo.png" alt="Nouns Bowling Logo">
+            <span>Nouns Bowling</span>
+        </a>
+    </div>
+
 </body>
 </html>
