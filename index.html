@@ -48,6 +48,28 @@
             width: 420px;
             height: 200px;
         }
+
+        .half-size-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+            .half-size-container a {
+                flex: 0 0 calc(15% - 10px);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-decoration: none;
+                color: white;
+                font-family: Verdana, sans-serif;
+            }
+
+            .half-size-container img {
+                width: 100px; /* Set the width to half the original size */
+                height: 100px; /* Set the height to half the original size */
+            }
     </style>
 </head>
 <body>
@@ -85,27 +107,27 @@
     <div class="half-size-container">
         <a href="#">
             <img src="images/half-mystery.png" alt="Prototype 1">
-            <span>Half 1</span>
+            <span>Proto 1</span>
         </a>
         <a href="#">
             <img src="images/half-mystery.png" alt="Prototype 2">
-            <span>Half 2</span>
+            <span>Proto 2</span>
         </a>
         <a href="#">
             <img src="images/half-mystery.png" alt="Prototype 3">
-            <span>Half 2</span>
+            <span>Proto 3</span>
         </a>
         <a href="#">
             <img src="images/half-mystery.png" alt="Prototype 4">
-            <span>Half 2</span>
+            <span>Proto 4</span>
         </a>
         <a href="#">
             <img src="images/half-mystery.png" alt="Prototype 5">
-            <span>Half 2</span>
+            <span>Proto 5</span>
         </a>
         <a href="#">
             <img src="images/half-mystery.png" alt="Prototype 6">
-            <span>Half 2</span>
+            <span>Proto 6</span>
         </a>
     </div>
 </body>
