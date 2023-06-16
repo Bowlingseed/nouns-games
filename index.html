@@ -17,12 +17,14 @@
 
         .image-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-            max-width: 600px;
+            max-width: 800px; /* Adjust the max-width value to accommodate three icons in a row */
         }
 
             .image-container a {
+                flex: 0 0 calc(33.33% - 20px); /* Add this line to set each icon to occupy one-third of the container's width and subtract the gap */
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -43,8 +45,8 @@
         }
 
         .top-image {
-            width: 320px;
-            height: 320px;
+            width: 420px;
+            height: 200px;
         }
     </style>
 </head>
@@ -54,17 +56,29 @@
     </div>
 
     <div class="image-container">
+        <a href="https://nounsbowling.wtf">
+            <img src="images/nouns-bowling-logo.png" alt="Nouns Bowling">
+            <span>Nouns Bowling</span>
+        </a>
         <a href="foodnouns/index.html">
-            <img src="images/foodnouns-logo.png" alt="Food Nouns Logo">
-            <span>FOODNOUNs</span>
+            <img src="images/foodnouns-logo.png" alt="FOODNOUNs">
+            <span>Kitchen Krush</span>
         </a>
         <a href="friends/index.html">
-            <img src="images/nounish-friends-logo.png" alt="Nounish Friends Logo">
-            <span>Nounish Friends</span>
+            <img src="images/nounish-friends-logo.png" alt="Nounish Friends">
+            <span>Nounish Bubbles</span>
         </a>
-        <a href="https://nounsbowling.wtf">
-            <img src="images/nouns-bowling-logo.png" alt="Nouns Bowling Logo">
-            <span>Nouns Bowling</span>
+        <a href="prototypes/nounio-bros/index.html">
+            <img src="images/super-nounio-bros.png" alt="Super Nounio Bros">
+            <span>Super Nounio Bros</span>
+        </a>
+        <a href="prototypes/alps-snowboarding/index.html">
+            <img src="images/blank-logo.png" alt="Alps Snowboarding">
+            <span>Alps Snowboarding</span>
+        </a>
+        <a href="./index.html">
+            <img src="images/blank-logo.png" alt="Mystery Game Logo">
+            <span>Mystery Game</span>
         </a>
     </div>
 
