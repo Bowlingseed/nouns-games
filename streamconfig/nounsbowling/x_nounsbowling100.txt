@@ -1,0 +1,4 @@
+x CONFIG
+TAGLINE1	Nounish Bowling Game	BENEFACTOR	Nouny Nounington	VNUM	v1.0.b1	BUILD	122122	DAILYTITLE	12 NEWEST NOUN BALLS	DAILYSUBTITLE	1 NOUN BALL, EVERY DAY, FOREVER. WTF? — <DATE>	
+MEDIAALPHA	https://www.nounsgames.wtf/StreamingAssets/	MEDIABETA	https://www.nounsgames.wtf/StreamingAssets/	MEDIALIVE	https://www.nounsgames.wtf/StreamingAssets/	
+x_END
