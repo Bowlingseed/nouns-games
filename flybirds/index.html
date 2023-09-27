@@ -34,12 +34,15 @@
         var loadingBar = document.querySelector("#unity-loading-bar");
         var progressBarFull = document.querySelector("#unity-progress-bar-full");
         var fullscreenButton = document.querySelector("#unity-fullscreen-button");
-        var warningBanner = document.querySelector("#unity-warning");
+        // Check if the user agent indicates a mobile device
         if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+            // Mobile device style: display the alert message
             var alertMessage = "Flybirds will have native iPhone and Android apps, but won't run on your phone in a web browser.";
             alert(alertMessage);
+            // Redirect to https://cczerogames.com after displaying the alert
             window.location.href = "https://cczerogames.com";
         } else {
+            // Load the Unity canvas for non-mobile devices
             var buildUrl = "Build";
             var loaderUrl = buildUrl + "/flybirds.loader.js";
             var config = {
@@ -49,11 +52,20 @@
                 streamingAssetsUrl: "StreamingAssets",
                 companyName: "Nouns Games, LLC",
                 productName: "Flybirds",
-                productVersion: "1.0",
-                showBanner: unityShowBanner,
+                productVersion: "1.0"
             };
-            canvas.style.width = "1280px";
-            canvas.style.height = "720px";
+            if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+                // Mobile device style: fill the whole browser client area with the game canvas:
+                var meta = document.createElement('meta');
+                meta.name = 'viewport';
+                meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+                document.getElementsByTagName('head')[0].appendChild(meta);
+                container.className = "unity-mobile";
+                canvas.className = "unity-mobile";
+            } else {
+                canvas.style.width = "1280px";
+                canvas.style.height = "720px";
+            }
             loadingBar.style.display = "block";
             var script = document.createElement("script");
             script.src = loaderUrl;
