@@ -89,7 +89,11 @@
                 alert(message);
               });
             };
-      document.body.appendChild(script);
+        document.body.appendChild(script);
+        // Add an event listener to the canvas to remove outline when it gains focus
+        canvas.addEventListener('focus', function () {
+            canvas.style.outline = 'none';
+        });
     </script>
   </body>
 </html>
