@@ -1,2 +1,2 @@
 x CONFIG
-VNUM	v1.0		BUILD	091623		x_END
+VNUM	v1.0		BUILD	Alpha 1		x_END
