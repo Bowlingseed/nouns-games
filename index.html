@@ -1,33 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>CC Zero Games | Elevating CC0 Art Projects</title>
+    <title>CC Zero Games | Made with Free IP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CC Zero Games showcases Flybirds - A Game of Art Collecting. Follow us for more free IP games.">
+    <meta property="og:title" content="CC Zero Games | Made with Free IP" />
+    <meta property="og:description" content="Flybirds - A Game of Art Collecting" />
+    <meta property="og:image" content="https://cc0games.com/images/flybirds-title-screen.jpg" />
+    <meta property="og:url" content="https://cc0games.com/your-page-url" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@kwikgamedev">
+    <meta name="twitter:title" content="CC Zero Games | Made with Free IP">
+    <meta name="twitter:description" content="Flybirds - A Game of Art Collecting">
+    <meta name="twitter:image" content="https://cc0games.com/images/flybirds-title-screen.jpg">
+
     <style>
         body {
             background-color: black;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
-        .bot-image-container {
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
+        }
+        .main-image-container {
             margin: 20px 0;
         }
-        .bot-image {
-            width: 400px;
-            height: 400px;
+        .main-image {
+            width: 1280px;
+            height: 720px;
+        }
+        .icon-buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px; /* spacing between the icons */
+            justify-content: center; /* centers the icons horizontally */
         }
         .large-text {
             font-family: Verdana, sans-serif;
             font-size: 24px;
             font-weight: bold;
             color: #fefefe;
-            text-align: center;
             margin-top: 20px;
         }
         .med-text {
             font-family: Verdana, sans-serif;
             font-size: 18px;
             color: dimgray;
-            text-align: center;
             margin-top: 20px;
         }
         a:link, a:visited {
@@ -37,14 +64,21 @@
     </style>
 </head>
 <body>
-    <div class="bot-image-container">
-        <img src="images/cc-zero-games-logo-b.png" alt="CC Zero Games Logo" class="bot-image">
-    </div>
-    <div class="large-text">
-        Elevating CC0 Art Projects
-    </div>
-    <div class="med-text">
-        Follow <a href="https://twitter.com/kwikgamedev">@kwikgamedev</a> for sneak peeks at games!
+    <div class="main-content">
+        <div class="main-image-container">
+            <img src="images/flybirds-title-screen.jpg" alt="Flybirds - A Game of Art Collecting" class="main-image">
+        </div>
+        <div class="icon-buttons">
+            <a href="https://twitter.com/kwikgamedev" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitter.png" alt="Twitter" width="64" height="64">
+            </a>
+            <a href="https://youtube.com/yourYoutubeChannel" target="_blank" rel="noopener noreferrer">
+                <img src="images/youtube.png" alt="YouTube" width="64" height="64">
+            </a>
+            <a href="mailto:hello@cczerogames.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/email.png" alt="Email" width="64" height="64">
+            </a>
+        </div>
     </div>
 </body>
 </html>
