@@ -9,19 +9,61 @@
     <style>
         body {
             background-color: black;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
+
+        #unity-container {
+            position: relative;
+        }
+
+        #mobile-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        #mobile-message {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+            #mobile-message p {
+                font-family: sans-serif;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            #mobile-message img {
+                margin-bottom: 20px;
+                max-width: 80%;
+                height: auto;
+            }
     </style>
 </head>
 <body>
-    <div id="unity-container" class="unity-desktop">
-        <div id="mobile-message" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.8); z-index: 2; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <img src="../images/appicon-flybirds.png" alt="Flybirds Icon" style="margin-bottom: 20px; max-width: 80%; height: auto;">
-                <p style="color: white; font-family: sans-serif; text-align: center; margin-bottom: 10px;">The Flybirds web game is designed to run on Mac or PC in a web browser.</p>
-                <p style="color: white; font-family: sans-serif; text-align: center;">iPhone and Android apps will be created if the Lunar Society proposal passes!</p>
-            </div>
+    <div id="mobile-container">
+        <div id="mobile-message">
+            <img src="../images/appicon-flybirds.png" alt="Flybirds Icon">
+            <p>Please play the Flybirds web game on your Mac or PC.</p>
+            <p>Native iPhone and Android apps are coming soon!</p>
         </div>
-
+    </div>
+    <div id="unity-container" class="unity-desktop">
         <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
         <div id="unity-loading-bar">
             <div id="unity-logo"></div>
@@ -38,18 +80,16 @@
         var canvas = document.querySelector("#unity-canvas");
         var loadingBar = document.querySelector("#unity-loading-bar");
 
-        if (true) {
-            // Mobile device detected
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
             var meta = document.createElement('meta');
             meta.name = 'viewport';
             meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
             document.getElementsByTagName('head')[0].appendChild(meta);
             container.className = "unity-mobile";
-            document.getElementById('mobile-message').style.display = "block";
+            document.getElementById('mobile-container').style.display = "flex";
             canvas.style.display = "none";
             loadingBar.style.display = "none";
         } else {
-            // Desktop detected
             canvas.style.width = "1280px";
             canvas.style.height = "720px";
             loadingBar.style.display = "block";
