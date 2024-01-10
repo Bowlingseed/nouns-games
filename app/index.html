@@ -32,7 +32,7 @@
 
             // Define store URLs and desktop URL
             var storeURL = isIOS ? 'https://apps.apple.com/app/id6451365050' : 'https://play.google.com/store/apps/details?id=com.rad.rusutsuriders';
-            var desktopURL = 'https://www.cczerogames.com/rusutsu';
+            var desktopURL = 'https://www.rusutsuriders.com/rusutsu';
 
             // Get URL parameters and append them to the deep link
             var params = getURLParams();
@@ -43,9 +43,6 @@
                 window.location = desktopURL;
             } else {
                 window.location = deepLink;
-                setTimeout(function() {
-                    window.location = storeURL;
-                }, 2000);
             }
         });</script>
 </head>
