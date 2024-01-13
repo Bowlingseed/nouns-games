@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rusutsu Riders - Skiing and Snowboarding</title>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+
+            // Detect device type
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            var isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+            var isAndroid = /android/i.test(userAgent);
+            var isDesktop = !(isIOS || isAndroid); // Detect desktop browsers
+
+            // Define store URLs and desktop URL
+            //var storeURL = isIOS ? 'https://apps.apple.com/app/id6451365050' : 'https://play.google.com/store/apps/details?id=com.rad.rusutsuriders';
+            var desktopURL = 'https://www.rusutsuriders.com/rusutsu/index.html';
+
+            // Get URL parameters and append them to the deep link
+            var deepLink = 'rusutsu://?n=66';
+
+            // Redirect logic based on device type
+            if (isDesktop) {
+                window.location = desktopURL + '?n=66';
+            } else {
+                window.location = deepLink;
+            }
+        });</script>
+</head>
+<body>
+</body>
+</html>
