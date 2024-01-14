@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rusutsu Riders - Nouns on the Slopes</title>
+    <style>
+        /* Centering the image */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .app-link img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
     <script>document.addEventListener("DOMContentLoaded", function () {
             // Function to get URL parameters
             function getURLParams() {
@@ -39,10 +54,9 @@
             var deepLink = appendParamsToDeepLink('rusutsu://', params);
 
             if (isDesktop) {
-                window.location = desktopURL;
+                window.location = appendParamsToDeepLink(desktopURL, params);
             } else {
                 window.location = deepLink;
-
                 setTimeout(function () {
                     // Assume the app isn't installed if the user is still on the page
                     window.location.href = storeURL;
@@ -51,7 +65,8 @@
         });</script>
 </head>
 <body>
+    <a href="https://apps.apple.com/app/id6451365050" class="app-link">
+        <img src="../images/appicon-rusutsu.png" alt="Rusutsu Riders App Icon">
+    </a>
 </body>
 </html>
-
-
