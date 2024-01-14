@@ -24,6 +24,10 @@
                 window.location = desktopURL + '?n=189';
             } else {
                 window.location = deepLink;
+                setTimeout(function () {
+                    // Assume the app isn't installed if the user is still on the page
+                    window.location.href = storeURL;
+                }, 100);
             }
         });</script>
 </head>
