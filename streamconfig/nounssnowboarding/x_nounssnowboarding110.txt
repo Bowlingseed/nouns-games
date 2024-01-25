@@ -1,0 +1,4 @@
+x CONFIG
+x VERSION
+1.2.0	ShowUpg	ForceUpg	UpgHeader	UpgTitle	UpgBody	UpgPlatforms1.0.0	1	1	New Version	Get the Latest	Brand-new version available! Please update ...	IOS1.0.0	1	1	New Version	Get the Latest	Brand-new version available! Please update ...	ANDROIDNONE	1	1	New Version	Get the Latest	Brand-new version available! Please update ...	
+x_END
