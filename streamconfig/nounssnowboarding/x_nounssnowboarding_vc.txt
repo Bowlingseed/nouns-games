@@ -1,3 +1,3 @@
 x VERSION
-1.2.0	ShowUpg	ForceUpg	UpgHeader	UpgTitle	UpgBody	UpgPlatforms1.0.0	1	1	New Version	Get the Latest	Brand-new version available! Please update ...	IOS1.0.0	1	1	New Version	Get the Latest	Brand-new version available! Please update ...	ANDROID1.1.0	1	1	New Version	Get the Latest	Brand-new version available! Please update ...	IOS1.1.0	1	1	New Version	Get the Latest	Brand-new version available! Please update ...	ANDROIDNONE	1	1	New Version	Get the Latest	Brand-new version available! Please update ...	
+1.2.0	0	01/02/2024 12:00pm UTC	01/02/2024 12:00pm UTC1.0.0	1	IOS	1.0.0	1	ANDROID	1.1.0	0	IOS	1.1.0	0	ANDROID	
 x_END
