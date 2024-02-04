@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Rusutsu Riders | Skiing &Aacute; Snowboarding Game</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #unity-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+        }
+
+        a, a:visited {
+            color: #188ef2;
+        }
+
+        #mobile-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        #mobile-message {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+            #mobile-message p {
+                font-family: sans-serif;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            #mobile-message img {
+                margin-bottom: 20px;
+                max-width: 80%;
+                height: auto;
+            }
+    </style>
+</head>
+<body>
+    <div id="mobile-container">
+        <div id="mobile-message">
+            <img src="../images/appicon-rusutsu.png" alt="Rusutsu Riders App Icon">
+            <p>Play the Rusutsu Riders web game on your Mac or PC.</p>
+            <p>iPhone available now, Android app in development.</p>
+            <p>Follow <a href="https://twitter.com/kwikgamedev">@kwikgamedev</a> for updates</p>
+        </div>
+    </div>
+</body>
+</html>
