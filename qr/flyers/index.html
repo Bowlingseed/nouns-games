@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rusutsu Riders - Nouns on the Slopes</title>
+    <title>Rusutsu Riders | Skiing and Snowboarding Game</title>
     <style>
         body {
             display: flex;
@@ -47,7 +47,7 @@
             var isDesktop = !(isIOS || isAndroid); // Detect desktop browsers
 
             // Define store URLs and desktop URL
-            var storeURL = isIOS ? 'https://apps.apple.com/app/id6451365050' : 'https://play.google.com/store/apps/details?id=com.rad.rusutsuriders';
+            var storeURL = isIOS ? 'https://apps.apple.com/app/id6451365050' : 'https://rusutsuriders.com/android';
             var desktopURL = 'https://www.rusutsuriders.com/rusutsu/index.html';
 
             // Get URL parameters and append them to the deep link
@@ -58,9 +58,10 @@
             } else {
                 window.location = deepLink;
                 setTimeout(function () {
-                    // Assume the app isn't installed if the user is still on the page
-                    window.location.href = storeURL;
-                }, 100);
+                    if (!document.hidden) {
+                        window.location.href = storeURL;
+                    }
+                }, 1000);
             }
         });</script>
 </head>
