@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rusutsu Riders - Nouns on the Slopes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .app-link img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4693CHG452"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-4693CHG452');
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Detect device type
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            var isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+            var isAndroid = /android/i.test(userAgent);
+            var isDesktop = !(isIOS || isAndroid); // Detect desktop browsers
+
+            // Define store URLs and desktop URL
+            var storeURL = isIOS ? 'https://apps.apple.com/app/id6451365050' : 'https://rusutsuriders.com/android';
+            var desktopURL = 'https://www.rusutsuriders.com/rusutsu/index.html';
+
+            // Define the deep link
+            var deepLink = 'rusutsu://?n=159';
+
+            if (isDesktop) {
+                // If on desktop, redirect to desktop URL
+                window.location = desktopURL + '?n=159';
+            } else {
+                // Attempt to open the app with the deep link
+                window.location = deepLink;
+                // Wait for 2 seconds before checking if the app opened
+                setTimeout(function () {
+                    // If the user is still on this page, assume the app isn't installed and redirect to the store
+                    if (document.hasFocus()) {
+                        window.location.href = storeURL;
+                    }
+                }, 3000); // 2 seconds delay
+            }
+        });
+    </script>
+</head>
+<body>
+    <a href="https://apps.apple.com/app/id6451365050" class="app-link">
+        <img src="../../images/appicon-rusutsu.png" alt="Rusutsu Riders App Icon">
+    </a>
+</body>
+</html>
