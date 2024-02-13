@@ -3,22 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rusutsu Riders - Nouns on the Slopes</title>
+    <title>Rusutsu Riders - App</title>
     <style>
-        /* Centering the image */
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .app-link img {
-            max-width: 100%;
-            height: auto;
-        }
+        html { height: 100%; }
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; overflow: hidden; }
+        .app-link img { max-width: 100%; max-height: 100vh; height: auto; object-fit: contain; }
     </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4693CHG452"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-4693CHG452');</script>
     <script>document.addEventListener("DOMContentLoaded", function () {
             // Function to get URL parameters
             function getURLParams() {
@@ -46,8 +38,8 @@
             var isDesktop = !(isIOS || isAndroid); // Detect desktop browsers
 
             // Define store URLs and desktop URL
-            var storeURL = isIOS ? 'https://apps.apple.com/app/id6451365050' : 'https://play.google.com/store/apps/details?id=com.rad.rusutsuriders';
-            var desktopURL = 'https://www.rusutsuriders.com/rusutsu';
+            var storeURL = isIOS ? 'https://apps.apple.com/app/id6451365050' : 'https://rusutsuriders.com/android';
+            var desktopURL = 'https://www.rusutsuriders.com/rusutsu/index.html';
 
             // Get URL parameters and append them to the deep link
             var params = getURLParams();
