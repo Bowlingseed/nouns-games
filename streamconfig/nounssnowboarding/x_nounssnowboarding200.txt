@@ -1,5 +1,6 @@
 x CONFIG
-BUILD	1.4.0 v409
+BUILD	2.0.0 v430
+DISABLESAVEREPLAY	0		DISABLEREPLAYERS	0		
 x LOCALGAME
 ERRPlease upgrade the app.TITLE	Rusutsu Riders 2.0 is here!	ルスツライダーズ2.0登場！		ERRPlease upgrade the app.BODY	All mountains, new multiplayer!\n\nPress QUIT and go to the App Store to upgrade!	「QUIT」を押して、App Store へアクセスしてアップグレードしてください！		ERRアプリをアップグレードしてください。TITLE	Rusutsu Riders 2.0 is here!	ルスツライダーズ2.0登場！		ERRアプリをアップグレードしてください。BODY	All mountains, new multiplayer!\n\nPress QUIT and go to the App Store to upgrade!	「QUIT」を押して、App Store へアクセスしてアップグレードしてください！		
 x_END
