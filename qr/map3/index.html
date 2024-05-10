@@ -17,10 +17,10 @@
             var isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
             var isAndroid = /android/i.test(userAgent);
             var isDesktop = !(isIOS || isAndroid);
-            var storeURL = isIOS ? 'https://apps.apple.com/app/id6451365050' : 'https://rusutsuriders.com/android';
+            var storeURL = isIOS ? 'https://apps.apple.com/app/id6451365050' : 'https://play.google.com/store/apps/details?id=com.rad.rusutsuriders';
             var desktopURL = 'https://www.rusutsuriders.com/rusutsu/index.html';
             var deepLink = 'rusutsu://';
-            var n = '';
+            var n = '?n=29';
             if (isDesktop) {
                 window.location = desktopURL + n;
             } else {
