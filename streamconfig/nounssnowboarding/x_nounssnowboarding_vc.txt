@@ -1,5 +1,5 @@
 x VERSION
-1.4.0	0	02/06/2024 12:00pm UTC	02/06/2024 12:00pm UTC
+2.1.0	0	02/06/2024 12:00pm UTC	02/06/2024 12:00pm UTC
 OFFLINE_SOON_HEADER	Rusutsu Riders will be offline	ルスツライダーズはオフラインになります。
 OFFLINE_SOON_TITLE	From {0} to {1}	{0} から {1} まで
 OFFLINE_SOON_BODY	Rusutsu Riders will be offline for maintenance. Please be prepared.	ルスツライダーズはメンテナンスのためオフラインになります。ご準備ください。
@@ -14,4 +14,6 @@ UPGRADE_MANDATORY_TITLE	Version {0} is available.	バージョン{0}が利用可
 UPGRADE_MANDATORY_BODY	Please upgrade the app.	アプリをアップグレードしてください。
 2.0.0	1	ANDROID	
 2.0.0	1	IOS
+1.4.0	1	ANDROID	
+1.4.0	1	IOS
 x_END
