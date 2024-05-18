@@ -16,6 +16,7 @@
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
             var isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
             var isAndroid = /android/i.test(userAgent);
+            var isDesktop = !(isIOS || isAndroid);
             var storeURL = isIOS ? 'https://apps.apple.com/app/id6451365050' : 'https://play.google.com/store/apps/details?id=com.rad.rusutsuriders';
             if (isDesktop) {
                 window.location = 'https://apps.apple.com/app/id6451365050';
