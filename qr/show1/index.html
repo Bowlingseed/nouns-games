@@ -19,17 +19,11 @@
             var isDesktop = !(isIOS || isAndroid);
             var storeURL = isIOS ? 'https://apps.apple.com/app/id6451365050' : 'https://play.google.com/store/apps/details?id=com.rad.rusutsuriders';
             var desktopURL = 'https://www.rusutsuriders.com/rusutsu/index.html';
-            var deepLink = 'rusutsu://';
             var n = '?n=29';
             if (isDesktop) {
                 window.location = desktopURL + n;
             } else {
-                window.location = deepLink + n;
-                setTimeout(function () {
-                    if (document.hasFocus()) {
-                        window.location.href = storeURL;
-                    }
-                }, 5000);
+                window.location.href = storeURL;
             }
         });</script>
 </head>
