@@ -9,9 +9,9 @@ OFFLINE_NOW_BODY	Rusutsu Riders is offline for maintenance. Please be come back 
 UPGRADE_AVAILABLE_HEADER	Upgrade Available	アップグレードが利用可能です
 UPGRADE_AVAILABLE_TITLE	Version {0} is available.	バージョン{0}が利用可能です。
 UPGRADE_AVAILABLE_BODY	Please upgrade the app.	アプリをアップグレードしてください。
-UPGRADE_MANDATORY_HEADER	New Rusutsu Riders!	アップグレードが必要です
-UPGRADE_MANDATORY_TITLE	Big update for the 2025 ski season.	バージョン{0}が利用可能です。
-UPGRADE_MANDATORY_BODY	Please upgrade the app now.	アプリをアップグレードしてください。
+UPGRADE_MANDATORY_HEADER	New Rusutsu Riders!	新しいルスツライダー！
+UPGRADE_MANDATORY_TITLE	Huge update for 2025 ski season.	2025年のスキーシーズンに向けた大規模アップデート！
+UPGRADE_MANDATORY_BODY	Please upgrade app now.	今すぐアプリをアップグレードしてください。
 2.0.0	1	ANDROID	
 2.0.0	1	IOS
 1.4.0	1	ANDROID	
