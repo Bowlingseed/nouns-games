@@ -1,0 +1,14 @@
+x CONFIG
+BUILD	3.2.0
+DISABLESAVEREPLAY	0		
+DISABLEREPLAYERS	0		
+x LOCALGAME
+COMMON_CHARACTER	Kommon Character	一般キャラクター	
+COMMON_HEADWEAR	Kommon Headwear	一般ヘッドウェア	
+COMMON_TOP	Kommon Top	一般トップ	
+COMMON_BOTTOM	Kommon Bottom	一般ボトム	
+COMMON_FOOTWEAR	Kommon Footwear	一般フットウェア	
+COMMON_SNOWBOARD	Kommon Snowboard	一般スノーボード	
+COMMON_SKIS	Kommon Skis	一般スキー	
+NOT_IN_LOCALIZATION	New Localization Entry	一般スキー	
+x_END
