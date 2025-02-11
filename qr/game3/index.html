@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Experience the thrill of Rusutsu Riders, the ultimate adventure on the slopes. Download the app now!">
-    <title>Rusutsu Riders - Lone Pine Game</title>
+    <title>Rusutsu Riders - iPad Arcade</title>
     <style>
         html { height: 100%; }
         body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; overflow: hidden; }
@@ -18,18 +18,10 @@
             var isAndroid = /android/i.test(userAgent);
             var isDesktop = !(isIOS || isAndroid);
             var storeURL = isIOS ? 'https://apps.apple.com/app/id6451365050' : 'https://play.google.com/store/apps/details?id=com.rad.rusutsuriders';
-            var desktopURL = 'https://www.rusutsuriders.com/rusutsu/index.html';
-            var deepLink = 'rusutsu://';
-            var n = '?n=29';
             if (isDesktop) {
-                window.location = desktopURL + n;
+                window.location = 'https://apps.apple.com/app/id6451365050';
             } else {
-                window.location = deepLink + n;
-                setTimeout(function () {
-                    if (document.hasFocus()) {
-                        window.location.href = storeURL;
-                    }
-                }, 5000);
+                window.location.href = storeURL;
             }
         });</script>
 </head>
