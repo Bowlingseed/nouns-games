@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience the thrill of Rusutsu Riders, the ultimate adventure on the slopes. Download the app now!">
+    <title>Rusutsu Riders - iPad Arcade</title>
+    <style>
+        html { height: 100%; }
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; overflow: hidden; }
+        .app-link img { max-width: 100%; max-height: 100vh; height: auto; object-fit: contain; }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4693CHG452"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-4693CHG452');</script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            var isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+            var isAndroid = /android/i.test(userAgent);
+            var isDesktop = !(isIOS || isAndroid);
+            var storeURL = isIOS ? 'https://apps.apple.com/app/id6451365050' : 'https://play.google.com/store/apps/details?id=com.rad.rusutsuriders';
+            if (isDesktop) {
+                window.location = 'https://apps.apple.com/app/id6451365050';
+            } else {
+                window.location.href = storeURL;
+            }
+        });</script>
+</head>
+<body>
+    <a href="https://apps.apple.com/app/id6451365050" class="app-link">
+        <img src="../../images/appicon-rusutsu.png" alt="Rusutsu Riders App Icon">
+    </a>
+</body>
+</html>
